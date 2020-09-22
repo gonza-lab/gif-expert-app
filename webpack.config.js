@@ -14,6 +14,7 @@ module.exports = {
   ],
   devtool: 'inline-source-map',
   entry: {
+    polyfill: 'babel-polyfill',
     main: './src/index.js',
   },
   output: {
