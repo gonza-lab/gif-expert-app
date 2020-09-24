@@ -1,7 +1,7 @@
-import { configure } from 'enzyme';
+import 'babel-polyfill';
+import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-
 import { createSerializer } from 'enzyme-to-json';
 
-configure({ adapter: new Adapter() });
+Enzyme.configure({ adapter: new Adapter() });
 expect.addSnapshotSerializer(createSerializer({ mode: 'deep' }));
